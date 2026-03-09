@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Form</title>
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100 p-3">
+    <div class="page-wrapper bg-white w-100">
+        <!-- Form Header -->
+        <div class="form-header pb-4 px-1">
+            <p class="contact-tag d-flex align-items-center gap-2 mb-2 fw-semibold">
+                <span class="tag-line d-inline-block"></span> CONTACT
+            </p>
+            <h1 class="fw-bolder mb-2">Get in <span>Touch</span></h1>
+            <p class="header-sub mb-0">Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+        <!-- Contact Form Card -->
+        <div class="contact-container rounded-3 p-4">
+            <form id="contactForm" novalidate>
+                <!-- Full Name + Email -->
+                <div class="form-row d-flex gap-3">
+                    <div class="form-group flex-fill mb-2">
+                        <label for="fullName" class="text-uppercase fw-semibold small mb-2 d-block">
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="text" id="fullName" name="fullName"
+                                placeholder="John Doe" autocomplete="name" class="w-100 rounded-3">
+                        </div>
+                        <div class="error-message mt-1 d-none align-items-center gap-1">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Please enter your full name</span>
+                        </div>
+                    </div>
+                    <div class="form-group flex-fill mb-2">
+                        <label for="email" class="text-uppercase fw-semibold small mb-2 d-block">
+                            Email Address <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email"
+                                placeholder="john@example.com" autocomplete="email" class="w-100 rounded-3">
+                        </div>
+                        <div class="error-message mt-1 d-none align-items-center gap-1">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>Please enter a valid email</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Subject -->
+                <div class="form-group mb-2">
+                    <label for="subject" class="text-uppercase fw-semibold small mb-2 d-block">
+                        Subject <span class="required">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text" id="subject" name="subject"
+                            placeholder="What's this about?" class="w-100 rounded-3">
+                    </div>
+                    <div class="error-message mt-1 d-none align-items-center gap-1">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Please enter a subject</span>
+                    </div>
+                </div>
+                <!-- Message -->
+                <div class="form-group textarea mb-2">
+                    <label for="message" class="text-uppercase fw-semibold small mb-2 d-block">
+                        Message <span class="required">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message"
+                            placeholder="Write your message here..."
+                            maxlength="500" class="w-100 rounded-3"></textarea>
+                    </div>
+                    <div class="char-counter text-end mt-1">
+                        <span id="charCount">0</span> / 500
+                    </div>
+                    <div class="error-message mt-1 d-none align-items-center gap-1">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Please enter your message (minimum 10 characters)</span>
+                    </div>
+                </div>
+                <!-- Submit -->
+                <button type="submit" class="submit-btn w-100 rounded-3 mt-1 fw-semibold text-white">
+                    Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+                </button>
+            </form>
+            <!-- Success -->
+            <div class="success-message d-none align-items-center gap-3 mt-3 rounded-3 p-3" id="successMessage">
+                <i class="fa-solid fa-check-circle fs-5"></i>
+                <div class="message-text">
+                    <h3 class="mb-1">Message Sent!</h3>
+                    <p class="mb-0">We'll get back to you as soon as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
