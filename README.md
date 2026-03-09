@@ -1,6 +1,6 @@
 # 📧 Elvevo Task 2 - Modern Contact Form
 
-A robust frontend contact interface built using HTML5, CSS3, and Vanilla JavaScript. It features a custom-coded validation engine, integrated Bootstrap 5 for responsiveness, and optimized event listeners for live UI updates, including a color-coded character limit indicator and automated error focus.
+A sleek, high-conversion contact form featuring a clean modern UI. Engineered with Vanilla JS for instant form validation and feedback, enhanced with smooth transitions, and fully optimized for a flawless experience across all device screen sizes
 
 ## 🔗 Live Demo
 [Click here to view the live project](https://modern-contact-form-validation.netlify.app/)
