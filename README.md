@@ -1,6 +1,6 @@
 # 📧 Elvevo Task 2 - Modern Contact Form
 
-A professional, sleek, and responsive contact form built as part of the **Elevvo Training Program**. This project features a modern dark-mode UI with real-time validation, dynamic character counting, and smooth interactive animations.
+A robust frontend contact interface built using HTML5, CSS3, and Vanilla JavaScript. It features a custom-coded validation engine, integrated Bootstrap 5 for responsiveness, and optimized event listeners for live UI updates, including a color-coded character limit indicator and automated error focus.
 
 ## 🔗 Live Demo
 [Click here to view the live project](https://modern-contact-form-validation.netlify.app/)
